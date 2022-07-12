@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 # github中webhooks的secret
-github_secret = 'xxxxxxxx'
+github_secret = 'zheng158313'
 
 def encryption(data):
     key = github_secret.encode('utf-8')
@@ -31,4 +31,4 @@ if __name__ == '__main__':
     app.run(port=8000)
 
 #测试webhook
-#重新提交1
+#重新提交2
